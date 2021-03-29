@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head id="fond">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="ccs/estilos.css" type="text/css">
+    <title>DOM - JuniorZ</title>
+
+</head>
+
+<body class="fondo">
+
+    <form style="text-align: center;" id="for">
+        <h3>Cajas de Texto Dinámico con DOM - JuniorZ </h3>
+        <h1>GENERACION DINAMICA DE CAJAS </h1>
+
+        <h5> Eligue el tipo de caja que deseas crear: </h5>
+
+        <select name="element" id="botP">
+
+            <option value="text">Textbox</option>
+            <option value="Button">Button</option>
+            <option value="Radio">Radio</option>
+
+        </select><br><br><br><br>
+
+        <h4> Ingresa la cantidad </h4>
+
+        <input type="text" id="texto" /><br><br>
+
+        <input type="button" id="bot" value="GENERAR" onclick="add(document.forms[0].element.value)" />
+        <input type="button" id="bot" value="BORRAR" onclick="borrar(document.forms[0].element.value)" /><br>
+        <br><br>
+        <span id="fooBar"></span>
+
+    </form>
+    
+    <script src="js/javascript.js"></script>
+
+</body>
+
+<footer>
+  
+</footer>
+
+</html>
